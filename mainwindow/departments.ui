@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Departments</class>
+ <widget class="QWidget" name="Departments">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1067</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>661</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Buscar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="searchDepartment">
+      <property name="placeholderText">
+       <string>Departamento</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Buscar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="searchMunicipie">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Municipio</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QTableView" name="tableViewDepartments"/>
+    </item>
+    <item row="1" column="2" colspan="2">
+     <widget class="QTableView" name="tableViewMunicipie"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Buscar:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="3">
+     <widget class="QLineEdit" name="searchCol">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Colonia o barrio</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="4">
+     <widget class="QTableView" name="tableViewCol"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>20</y>
+     <width>21</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>20</y>
+     <width>331</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>DEPARTAMENTO</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="name">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="id">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnAdd">
+        <property name="toolTip">
+         <string>Nuevo</string>
+        </property>
+        <property name="text">
+         <string>Nuevo</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Add/Add_16x16.png</normaloff>:/icons/Add/Add_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Editar</string>
+        </property>
+        <property name="text">
+         <string>Editar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Edit/Edit_16x16.png</normaloff>:/icons/Edit/Edit_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDelete">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Eliminar</string>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Delete/Delete_16x16.png</normaloff>:/icons/Delete/Delete_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSave">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Eliminar</string>
+        </property>
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Save/Save_16x16.png</normaloff>:/icons/Save/Save_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>MUNICIPIO</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="nameMun">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="idMun">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btnAddMun">
+        <property name="toolTip">
+         <string>Nuevo</string>
+        </property>
+        <property name="text">
+         <string>Nuevo</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Add/Add_16x16.png</normaloff>:/icons/Add/Add_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnEditMun">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Editar</string>
+        </property>
+        <property name="text">
+         <string>Editar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Edit/Edit_16x16.png</normaloff>:/icons/Edit/Edit_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDeleteMun">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Eliminar</string>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Delete/Delete_16x16.png</normaloff>:/icons/Delete/Delete_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSaveMun">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Eliminar</string>
+        </property>
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Save/Save_16x16.png</normaloff>:/icons/Save/Save_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>COLONIA/BARRIO/PASAJE</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="nameCol">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="idCol">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="btnAddCol">
+        <property name="toolTip">
+         <string>Nuevo</string>
+        </property>
+        <property name="text">
+         <string>Nuevo</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Add/Add_16x16.png</normaloff>:/icons/Add/Add_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnEditCol">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Editar</string>
+        </property>
+        <property name="text">
+         <string>Editar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Edit/Edit_16x16.png</normaloff>:/icons/Edit/Edit_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDeleteCol">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Eliminar</string>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Delete/Delete_16x16.png</normaloff>:/icons/Delete/Delete_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSaveCol">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Eliminar</string>
+        </property>
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/Save/Save_16x16.png</normaloff>:/icons/Save/Save_16x16.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

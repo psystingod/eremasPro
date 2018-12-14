@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+
+<qresource prefix="/">
+    <file>images/128_Lock.png</file>
+    <file>images/menu.png</file>
+    <file>settings/settings.plist</file>
+</qresource>
+
+</RCC>
