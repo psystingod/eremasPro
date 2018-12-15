@@ -105,7 +105,7 @@
     <string>Editar</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -122,24 +122,10 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1" colspan="2">
-     <widget class="QLineEdit" name="idLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="3">
      <widget class="QLabel" name="nombreDelProveedorLabel">
       <property name="text">
        <string>*Nombre del proveedor:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="4" colspan="2">
-     <widget class="QLineEdit" name="nombreDelProveedorLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -150,33 +136,10 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="nitLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="maxLength">
-       <number>17</number>
-      </property>
-      <property name="placeholderText">
-       <string>xxxx-xxxxxx-xxx-x</string>
-      </property>
-      <property name="clearButtonEnabled">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="3">
      <widget class="QLabel" name="nrcLabel">
       <property name="text">
        <string>*NRC:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="4" colspan="2">
-     <widget class="QLineEdit" name="nrcLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -201,24 +164,10 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="1" colspan="2">
-     <widget class="QLineEdit" name="giroLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
     <item row="3" column="3">
      <widget class="QLabel" name="nacionalidadLabel">
       <property name="text">
        <string>*Nacionalidad:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="4" colspan="2">
-     <widget class="QLineEdit" name="nacionalidadLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -240,13 +189,6 @@
      <widget class="QLabel" name="correoElectronicoLabel">
       <property name="text">
        <string>Correo electrónico:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="4" colspan="2">
-     <widget class="QLineEdit" name="correoElectronicoLineEdit">
-      <property name="enabled">
-       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -287,6 +229,64 @@
     </item>
     <item row="6" column="2">
      <widget class="QLineEdit" name="categoriaLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="giroLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="nitLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maxLength">
+       <number>17</number>
+      </property>
+      <property name="placeholderText">
+       <string>xxxx-xxxxxx-xxx-x</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="idLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLineEdit" name="correoElectronicoLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLineEdit" name="nacionalidadLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLineEdit" name="nrcLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLineEdit" name="nombreDelProveedorLineEdit">
       <property name="enabled">
        <bool>false</bool>
       </property>
