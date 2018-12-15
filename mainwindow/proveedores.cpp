@@ -334,7 +334,6 @@ void Proveedores::on_tableViewProviders_clicked(const QModelIndex &index)
     ui->btn_new->setEnabled(true);
     ui->btn_save->setDisabled(true);
     ui->btn_edit->setEnabled(true);
-
     ui->idLineEdit->setDisabled(true);
     ui->nitLineEdit->setDisabled(true);
     ui->nrcLineEdit->setDisabled(true);
